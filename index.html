@@ -16,7 +16,7 @@
 
   <!-- Banner -->
   <section class="banner">
-    <img src="https://source.unsplash.com/1600x400/?weather" alt="Weather Banner">
+    <img src="istockphoto-531889697-2048x2048.jpg" alt="Weather Banner">
   </section>
 
   <!-- Welcome Section -->
@@ -25,35 +25,70 @@
     <p>Your reliable source for real-time weather forecasts and updates. Track live weather data, plan your day with accuracy, and stay informed.</p>
   </section>
 
-  <!-- Image Gallery -->
-  <section class="gallery">
-    <div class="thumb">
-      <div class="caption">Sunny</div>
+    <!-- Weather Gallery -->
+    <section class="gallery">
+    <div class="thumb" style="background-image: url('premium_photo-1667076649924-d784d205cbba.avif');">
+        <div class="caption">Sunny</div>
     </div>
-    <div class="thumb">
-      <div class="caption">Rainy</div>
+    <div class="thumb" style="background-image: url('istockphoto-1476190237-2048x2048.jpg');">
+        <div class="caption">Rainy</div>
     </div>
-    <div class="thumb">
-      <div class="caption">Cloudy</div>
+    <div class="thumb" style="background-image: url('premium_photo-1667143327769-1c36fd30a7c6.avif');">
+        <div class="caption">Cloudy</div>
     </div>
-  </section>
+    <div class="thumb" style="background-image: url('istockphoto-521998431-2048x2048.jpg');">
+        <div class="caption">Snow</div>
+    </div>
+    <div class="thumb" style="background-image: url('premium_photo-1726818265070-c08eb719d77c.avif');">
+        <div class="caption">Storm</div>
+    </div>
+    <div class="thumb" style="background-image: url('istockphoto-1322716422-2048x2048.jpg');">
+        <div class="caption">Windy</div>
+    </div>
+    </section>
 
-  <!-- Content Sections -->
-  <section class="content">
-    <div class="section">
-      <img src="https://source.unsplash.com/400x300/?sunny" alt="Sunny">
-      <p>Enjoy sunny days with temperatures soaring high. Don't forget your sunscreen!</p>
+    <!-- Today's Highlights -->
+    <section class="highlights">
+    <h2>Today's Highlights</h2>
+    <div class="cards">
+        <div class="card">
+        <h3>Temperature</h3>
+        <p>28°C</p>
+        </div>
+        <div class="card">
+        <h3>Feels Like</h3>
+        <p>32°C</p>
+        </div>
+        <div class="card">
+        <h3>Humidity</h3>
+        <p>60%</p>
+        </div>
+        <div class="card">
+        <h3>Wind Speed</h3>
+        <p>14 km/h</p>
+        </div>
+        <div class="card">
+        <h3>UV Index</h3>
+        <p>5 (Moderate)</p>
+        </div>
     </div>
-    <div class="section reverse">
-      <img src="https://source.unsplash.com/400x300/?storm" alt="Storm">
-      <p>Stay updated with storm alerts. Get safety tips and real-time warnings.</p>
-    </div>
-  </section>
+    </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 WeatherLive. All rights reserved.</p>
   </footer>
 
+  <!-- Back to Top Button -->
+<button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+<script>
+  const btn = document.getElementById("topBtn");
+  window.onscroll = () => {
+    btn.style.display = (window.scrollY > 300) ? "block" : "none";
+  };
+</script>
+
 </body>
+
 </html>
